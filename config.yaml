@@ -1,0 +1,127 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - "App Store"
+dockitems_persist:
+  - name: "Sublime Text"
+    path: "/Applications/Sublime Text.app/"
+    pos: 5
+
+configure_sudoers: false
+
+homebrew_installed_packages:
+  - ansible
+  - autorestic
+  - bash
+  - bat
+  - caddy
+  - cfitsio
+  - crf++
+  - ctop
+  - ffmpeg
+  - fftw
+  - gh
+  - ghostscript
+  - go
+  - golang-migrate
+  - htop
+  - ilmbase
+  - lf
+  - libexif
+  - libgsf
+  - libheif
+  - libimagequant
+  - liblqr
+  - libmatio
+  - libomp
+  - libproxy
+  - librsvg
+  - libspng
+  - mosquitto
+  - mozjpeg
+  - neovim
+  - nghttp2
+  - nss
+  - nvm
+  - openslide
+  - orc
+  - pipx
+  - poetry
+  - postgresql
+  - pre-commit
+  - pyenv
+  - sqlc
+  - subversion
+  - tree
+  - wget
+  - wireguard-go
+  - yarn
+  - zlib
+  - zsh-autosuggestions
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - a-better-finder-attributes
+  - android-file-transfer
+  - authy
+  - basictex
+  - battle-net
+  - bitwarden
+  - brave-browser
+  - dash
+  - dotnet-sdk
+  - firefox
+  - flutter
+  - font-fira-code
+  - font-fira-code-nerd-font
+  - font-hack-nerd-font
+  - github
+  - google-chrome
+  - home-assistant
+  - iterm2
+  - microsoft-auto-update
+  - microsoft-office
+  - ngrok
+  - slack
+  - spotify
+  - steam
+  - sublime-text
+  - visual-studio-code
+  - vlc
+  - zoom
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+
+# ! Broken in Monterey
+# mas_installed_apps:
+#   - { id: 1289583905, name: "Pixelmator Pro" }
+
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+gem_packages: []
+npm_packages: []
+pip_packages: []
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
