@@ -1,19 +1,36 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_osx: true
-
+configure_osx: false
+configure_terminal: false
+configure_dotfiles: false
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
 dockitems_remove:
   - Launchpad
   - TV
   - Podcasts
   - "App Store"
+  - Safari
+  - Messages
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Music
+  - News
+  - Keynote
+  - Numbers
+  - Pages
+  - "System Preferences"
+
 dockitems_persist:
-  - name: "Sublime Text"
-    path: "/Applications/Sublime Text.app/"
-    pos: 5
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 2
 
 configure_sudoers: false
 
@@ -59,6 +76,7 @@ homebrew_installed_packages:
   - pre-commit
   - pyenv
   - sqlc
+  - stow
   - subversion
   - tree
   - wget
@@ -69,6 +87,8 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/services
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -104,7 +124,7 @@ homebrew_cask_apps:
 # See `geerlingguy.mas` role documentation for usage instructions.
 
 # ! Broken in Monterey
-# mas_installed_apps:
+mas_installed_apps: []
 #   - { id: 1289583905, name: "Pixelmator Pro" }
 
 mas_email: ""

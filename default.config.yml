@@ -46,6 +46,7 @@ homebrew_installed_packages:
   - go
   - gpg
   - httpie
+  - httpie
   - iperf
   - libevent
   - sqlite
